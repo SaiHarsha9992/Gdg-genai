@@ -3,58 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Video Embed</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
-            text-align: center;
             background-color: #f0f0f0;
+            position: relative;
         }
-        .top {
-            margin-top: 20%;
+        iframe {
+            width: 80%;
+            height: 80%;
+            border: none;
+            display: block; /* Centering */
+            margin: 0 auto; /* Centering */
         }
-        .link {
-            color: blue;
-            text-decoration: underline;
-            cursor: pointer;
-            font-size: 18px; /* Increased link font size */
+        .lab-link {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
         }
-        .bottom {
-            margin-bottom: 20px;
-            font-size: 32px; /* Increased font size */
-            font-weight: bold; /* Make text bold */
+        .lab-link:hover {
+            background-color: #0056b3;
         }
-        .image-container {
+        .download-button {
             margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
         }
-        img {
-            max-width: 90%; /* Adjust image size */
-            height: auto;
+        .download-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-
-    <div class="top">
-        <a class="https://github.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/blob/main/Creating%20a%20Persistent%20Disk/Creating%20a%20Persistent%20Disk.md" href="https://www.cloudskillsboost.google/course_templates/754/labs/461561" target="_blank">Click here to access the lab 2</a>
-    </div>
-
-    <div class="bottom">
-        <p>We will update it when class is done.</p>
-    </div>
- <a href="https://github.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/blob/main/Creating%20a%20Persistent%20Disk/Creating%20a%20Persistent%20Disk.md
-" target="_blank">Click here to access the lab 2 (video)</a>
-   
-
-
-    <div class="image-container">
-        <img src="../img/tnx.png" alt="Description of Image" height="500px" width="300px">
-    </div>
-
+    <a class="lab-link" href="https://www.cloudskillsboost.google/course_templates/754/labs/461561" target="_blank">Click here to access the lab 1</a> <br> <br>
+    <iframe src="https://drive.google.com/file/d/1pOI6iwZbPEuJa-SJpnKSs4-hE9DrmOHe/preview" width="640" height="480" allow="autoplay"></iframe>
+    <a class="download-button" href="https://github.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/blob/main/Creating%20a%20Persistent%20Disk/Creating%20a%20Persistent%20Disk.md" download>files <link rel="stylesheet" href=""></a>
 </body>
 </html>
+
+
